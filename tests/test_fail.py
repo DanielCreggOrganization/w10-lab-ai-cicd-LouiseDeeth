@@ -1,5 +1,5 @@
-import pytest
 from hello_app.webapp import app
+
 
 def test_fail():
     """This test now passes."""

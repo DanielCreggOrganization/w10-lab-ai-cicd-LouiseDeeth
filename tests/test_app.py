@@ -1,5 +1,5 @@
-import pytest
 from hello_app.webapp import app
+
 
 def test_home_route():
     """Test the home route returns 200 OK."""
