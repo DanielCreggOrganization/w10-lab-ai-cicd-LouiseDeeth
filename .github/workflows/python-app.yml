@@ -24,6 +24,10 @@ jobs:
           pip install -r requirements.txt
           pip install flake8 pytest
 
+      - name: Print Flask version
+        run: |
+          pip freeze | grep '^Flask==' || echo "Flask not found"
+
       - name: Lint with flake8
         run: |
           flake8 .
